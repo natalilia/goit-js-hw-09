@@ -1,8 +1,8 @@
-import Notiflix from 'notiflix';
+import Notiflix from "notiflix";
 
-const form = document.querySelector('.form');
+const form = document.querySelector(".form");
 
-
+form.addEventListener("submit", handleSubmit);
 
 function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
@@ -46,4 +46,3 @@ function handleSubmit(event) {
   }
   form.reset();
 }
-
